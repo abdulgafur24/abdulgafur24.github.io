@@ -1,0 +1,61 @@
+.about {
+  /* margin-bottom: 60px; */
+  background: transparent;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__particles {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -100;
+}
+.about__image {
+  width: 100%;
+
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  border: 10px solid lightgray;
+  border-radius: 20px;
+}
+
+.about__pre-title {
+  margin: 20px 0 10px;
+
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.about__title {
+  padding-bottom: 3px;
+  /* background: linear-gradient(to right, #92fe9d 0%, #00c9ff 50%, #92fe9d 100%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 44px;
+  font-weight: 550;
+  margin-bottom: 10px;
+}
+
+.about__description {
+  margin-bottom: 15px;
+  font-family: "Chilanka";
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.about__detail {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.about__deatail--data {
+  color: gray;
+}

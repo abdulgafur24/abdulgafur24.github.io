@@ -1,0 +1,44 @@
+.skill {
+  margin: 50px 0 150px;
+}
+.skill__card {
+  font-family: "Oswald";
+  width: 100%;
+
+  border-radius: 4px;
+  border: 1px solid lightgray;
+  padding: 20px 25px 20px;
+}
+.skill__card--title {
+  font-size: 22px;
+  font-family: inherit;
+  margin-bottom: 40px;
+}
+.skill-item {
+  margin-top: 25px;
+  font-family: inherit;
+  position: relative;
+  /* margin-top: 15px; */
+  height: 20px;
+  width: 100%;
+  background: #eeeeee;
+  border: none;
+  border-radius: 7px;
+}
+
+.skill-item:hover .progress-bar {
+  background-position: right center;
+}
+.progress-bar {
+  transition: 0.7s;
+  border-radius: 7px;
+  height: 100%;
+  background: linear-gradient(to right, #92fe9d 0%, #00c9ff 50%, #92fe9d 100%);
+  background-size: 200% auto;
+}
+
+.skill-item--label {
+  font-family: inherit;
+  position: absolute;
+  top: -22;
+}
