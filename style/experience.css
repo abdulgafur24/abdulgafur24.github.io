@@ -34,7 +34,7 @@
   font-family: "Chilanka";
 }
 
-@media (min-width: 425px) {
+@media (min-width: 375px) {
   .experience__timeline-image {
     width: 75px;
     height: 75px;
@@ -77,10 +77,7 @@
   .experience__timeline--item {
     text-align: end;
     padding-right: 125px;
-  }
-  .experience__timeline--item {
-    text-align: end;
-    padding-right: 125px;
+    padding-left: 100px;
   }
   .experience__timeline--item-right {
     transform: translate(100%);
