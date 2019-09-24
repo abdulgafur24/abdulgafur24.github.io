@@ -18,12 +18,21 @@
 .experience__timeline--item,
 .experience__timeline--item-right {
   position: relative;
-  /* padding-top: 15px; */
+  display: flex;
+
+  width: 100%;
+  margin-bottom: 30px;
+}
+.experience__timeline-panel {
+  margin-left: 15px;
 }
 
 .experience__timeline-image {
   object-fit: cover;
   border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  border: 4px solid #e9ecef;
 }
 .experience__heading {
   font-size: 28px;
