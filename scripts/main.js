@@ -22,6 +22,6 @@ $("#main__arrow-down--button").click(function() {
     {
       scrollTop: $("#about").offset().top
     },
-    1500
+    900
   );
 });

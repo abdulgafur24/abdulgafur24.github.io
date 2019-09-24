@@ -4,41 +4,37 @@
 .skill__card {
   font-family: "Oswald";
   width: 100%;
-
+  text-align: center;
   border-radius: 4px;
   border: 1px solid lightgray;
   padding: 20px 25px 20px;
 }
-.skill__card--title {
-  font-size: 22px;
-  font-family: inherit;
-  margin-bottom: 40px;
+
+.skill__icon {
+  width: 100px;
+  height: 100px;
+  font-size: 72px;
+  /* margin-bottom: 20px; */
 }
-.skill-item {
-  margin-top: 25px;
-  font-family: inherit;
-  position: relative;
-  /* margin-top: 15px; */
-  height: 20px;
-  width: 100%;
-  background: #eeeeee;
-  border: none;
-  border-radius: 7px;
+.ic-react {
+  color: rgb(0, 188, 212);
+}
+.ic-android {
+  color: rgb(135, 186, 75);
+}
+.ic-node {
+  color: rgb(140, 200, 74);
+}
+.skill__label {
+  font-size: 26px;
 }
 
-.skill-item:hover .progress-bar {
-  background-position: right center;
-}
-.progress-bar {
-  transition: 0.7s;
-  border-radius: 7px;
-  height: 100%;
+.skill__label:hover {
   background: linear-gradient(to right, #92fe9d 0%, #00c9ff 50%, #92fe9d 100%);
+  /* background: linear-gradient(to right, #9795f0 0%, #fbc8d4 100%); */
+  /* background: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%); */
   background-size: 200% auto;
-}
-
-.skill-item--label {
-  font-family: inherit;
-  position: absolute;
-  top: -22;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s;
 }

@@ -1,0 +1,59 @@
+.experience {
+}
+
+.experience__timeline {
+  position: relative;
+}
+
+.experience__timeline::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  background: #e9ecef;
+  top: 0;
+  left: 50%;
+}
+
+.experience__timeline--item,
+.experience__timeline--item-right {
+  position: relative;
+  width: 50%;
+  padding-top: 15px;
+  margin-bottom: 60px;
+}
+.experience__timeline--item {
+  text-align: end;
+  padding-right: 125px;
+}
+.experience__timeline--item-right {
+  transform: translate(100%);
+
+  padding-left: 125px;
+}
+.experience__timeline--item .experience__timeline-image {
+  left: calc(100% - 75px);
+}
+.experience__timeline--item-right .experience__timeline-image {
+  left: -75px;
+}
+
+.experience__timeline-image {
+  position: absolute;
+  top: 0;
+  /* left: calc(50% - 75px); */
+  left: calc(100% - 75px);
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 7px solid #e9ecef;
+}
+.experience__heading {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+.experience__text {
+  margin-top: 5px;
+  font-family: "Chilanka";
+}

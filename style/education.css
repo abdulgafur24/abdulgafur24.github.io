@@ -1,12 +1,12 @@
-.timeline {
+.education {
+  margin-bottom: 150px;
 }
-
-.timeline-block {
+.education__timeline-block {
   margin-left: 10px;
   position: relative;
 }
 
-.timeline-block::before {
+.education__timeline-block::before {
   content: "";
   position: absolute;
   top: 0;
@@ -16,7 +16,7 @@
   background: #eeeeee;
 }
 
-.timeline--item {
+.education__timeline--item {
   position: relative;
   padding: 20px 25px 20px;
   font-family: "Oswald";
@@ -25,7 +25,7 @@
   margin-left: 20px;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
 }
-.timeline--item::before {
+.education__timeline--item::before {
   position: absolute;
   top: 25%;
   z-index: -1;
@@ -35,7 +35,7 @@
   height: 2px;
   background: #eeeeee;
 }
-.timeline--item::after {
+.education__timeline--item::after {
   content: "";
   position: absolute;
   top: 22.5%;
@@ -46,7 +46,7 @@
   height: 15px;
 }
 
-.timeline--item__image {
+.education__timeline--item__image {
   margin-right: 10px;
   display: inline-block;
   width: 50px;
@@ -54,7 +54,7 @@
   border-radius: 50%;
   border: 2px solid lightgray;
 }
-.timeline--item__title {
+.education__timeline--item__title {
   display: flex;
   align-items: center;
   font-family: inherit;
@@ -62,7 +62,7 @@
   margin-bottom: 15px;
 }
 
-.timeline--item__period {
+.education__timeline--item__period {
   font-size: 18px;
   font-family: inherit;
   background: linear-gradient(to right, #92fe9d 0%, #00c9ff 50%, #92fe9d 100%);
@@ -70,13 +70,13 @@
   -webkit-text-fill-color: transparent;
 }
 
-.timeline--item__location {
+.education__timeline--item__location {
   font-size: 18px;
   font-family: inherit;
   color: #757575;
 }
 
-.timeline--item__description {
+.education__timeline--item__description {
   font-family: inherit;
   margin-top: 10px;
   line-height: 22px;
