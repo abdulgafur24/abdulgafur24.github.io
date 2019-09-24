@@ -12,42 +12,18 @@
   position: absolute;
   background: #e9ecef;
   top: 0;
-  left: 50%;
+  left: 35;
 }
 
 .experience__timeline--item,
 .experience__timeline--item-right {
   position: relative;
-  width: 50%;
-  padding-top: 15px;
-  margin-bottom: 60px;
-}
-.experience__timeline--item {
-  text-align: end;
-  padding-right: 125px;
-}
-.experience__timeline--item-right {
-  transform: translate(100%);
-
-  padding-left: 125px;
-}
-.experience__timeline--item .experience__timeline-image {
-  left: calc(100% - 75px);
-}
-.experience__timeline--item-right .experience__timeline-image {
-  left: -75px;
+  /* padding-top: 15px; */
 }
 
 .experience__timeline-image {
-  position: absolute;
-  top: 0;
-  /* left: calc(50% - 75px); */
-  left: calc(100% - 75px);
-  width: 150px;
-  height: 150px;
   object-fit: cover;
   border-radius: 50%;
-  border: 7px solid #e9ecef;
 }
 .experience__heading {
   font-size: 28px;
@@ -56,4 +32,75 @@
 .experience__text {
   margin-top: 5px;
   font-family: "Chilanka";
+}
+
+@media (min-width: 425px) {
+  .experience__timeline-image {
+    width: 75px;
+    height: 75px;
+    border: 4px solid #e9ecef;
+  }
+  .experience__timeline-panel {
+    margin-left: 15px;
+  }
+  .experience__timeline--item,
+  .experience__timeline--item-right {
+    display: flex;
+
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .experience__timeline-image {
+    width: 150px;
+    height: 150px;
+    border: 4px solid #e9ecef;
+  }
+  .experience__timeline-panel {
+    margin-left: 0px;
+  }
+  .experience__timeline::before {
+    left: 50%;
+  }
+
+  .experience__timeline-image {
+    position: absolute;
+    top: 0;
+  }
+  .experience__timeline--item,
+  .experience__timeline--item-right {
+    width: 50%;
+    margin-bottom: 60px;
+  }
+  .experience__timeline--item {
+    text-align: end;
+    padding-right: 125px;
+  }
+  .experience__timeline--item {
+    text-align: end;
+    padding-right: 125px;
+  }
+  .experience__timeline--item-right {
+    transform: translate(100%);
+    padding-left: 125px;
+  }
+  .experience__timeline--item .experience__timeline-image {
+    left: calc(100% - 75px);
+  }
+  .experience__timeline--item-right .experience__timeline-image {
+    left: -75px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .experience__timeline-image {
+    border: 7px solid #e9ecef;
+  }
+  .experience__timeline--item,
+  .experience__timeline--item-right {
+    width: 50%;
+    margin-bottom: 60px;
+  }
 }

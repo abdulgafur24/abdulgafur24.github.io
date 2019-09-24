@@ -1,6 +1,7 @@
 .main {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../images/main-bg.jpg") center center;
+    url("../images/main-bg.jpg") center center no-repeat;
+  background-size: cover;
   width: 100%;
   height: 100vh;
   display: flex;
