@@ -13,12 +13,12 @@
 }
 
 .main__title {
-  font-size: 72px;
+  font-size: 24px;
   font-weight: bold;
 }
 
 .main__discription {
-  font-size: 24px;
+  font-size: 14px;
   position: relative;
 }
 .main__arrow-down {
@@ -29,4 +29,29 @@
   animation-duration: 3s;
   animation-delay: 4s;
   animation-iteration-count: infinite;
+}
+
+@media (min-width: 375px) {
+  .main__title {
+    font-size: 24px;
+  }
+  .main__discription {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main__title {
+    font-size: 52px;
+  }
+
+  .main__discription {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main__title {
+    font-size: 72px;
+  }
 }

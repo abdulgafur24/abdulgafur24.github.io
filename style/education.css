@@ -58,12 +58,12 @@
   display: flex;
   align-items: center;
   font-family: inherit;
-  font-size: 22px;
+  font-size: 18px;
   margin-bottom: 15px;
 }
 
 .education__timeline--item__period {
-  font-size: 18px;
+  font-size: 16px;
   font-family: inherit;
   background: linear-gradient(to right, #92fe9d 0%, #00c9ff 50%, #92fe9d 100%);
   -webkit-background-clip: text;
@@ -71,7 +71,7 @@
 }
 
 .education__timeline--item__location {
-  font-size: 18px;
+  font-size: 16px;
   font-family: inherit;
   color: #757575;
 }
@@ -79,5 +79,29 @@
 .education__timeline--item__description {
   font-family: inherit;
   margin-top: 10px;
-  line-height: 22px;
+  line-height: 18px;
+  font-size: 16px;
+}
+
+@media (min-width: 375px) {
+}
+
+@media (min-width: 768px) {
+  .education__timeline--item__title {
+    font-size: 22px;
+  }
+  .education__timeline--item__period {
+    font-size: 18px;
+  }
+
+  .education__timeline--item__location {
+    font-size: 18px;
+  }
+  .education__timeline--item__description {
+    line-height: 22px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
 }

@@ -1,8 +1,7 @@
 .about {
-  /* margin-bottom: 60px; */
+  margin-top: 30px;
   background: transparent;
   position: relative;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,18 +16,21 @@
   z-index: -100;
 }
 .about__image {
-  width: 100%;
+  width: 80%;
+  max-height: 400px;
 
-  height: 400px;
   object-fit: cover;
   object-position: center;
   border: 10px solid lightgray;
   border-radius: 20px;
 }
+.main-image {
+  display: flex;
+  justify-content: center;
+}
 
 .about__pre-title {
   margin: 20px 0 10px;
-
   font-style: italic;
   font-size: 18px;
   font-weight: 300;
@@ -36,10 +38,9 @@
 
 .about__title {
   padding-bottom: 3px;
-  /* background: linear-gradient(to right, #92fe9d 0%, #00c9ff 50%, #92fe9d 100%); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 44px;
+  font-size: 32px;
   font-weight: 550;
   margin-bottom: 10px;
 }
@@ -47,15 +48,35 @@
 .about__description {
   margin-bottom: 15px;
   font-family: "Chilanka";
-  font-size: 20px;
+  font-size: 16px;
   line-height: 22px;
 }
 
 .about__detail {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .about__deatail--data {
   color: gray;
+}
+
+@media (min-width: 375px) {
+}
+
+@media (min-width: 768px) {
+  .about {
+    height: 80vh;
+    max-height: 800px;
+  }
+  .about__image {
+    width: 100%;
+    max-height: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about {
+    height: 100vh;
+  }
 }
